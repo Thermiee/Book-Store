@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Book from './Book';
 import Form from '../form/Form';
+import './book.css';
 
 const BooksList = () => {
   const books = [
@@ -16,7 +17,7 @@ const BooksList = () => {
       category: 'Science Fiction',
       title: 'Dune',
       author: 'Frank Herbert',
-      chapter: 'Chapter 3: A Lesson Learned',
+      chapter: 'Chapter 3: "A Lesson Learned"',
       completed: '8%',
     },
     {

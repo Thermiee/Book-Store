@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../button/Button';
+import './book.css';
 
 const Book = ({
   category, title, author, chapter, completed,
