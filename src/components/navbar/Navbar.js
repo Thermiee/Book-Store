@@ -11,7 +11,7 @@ function Navbar() {
           Bookstore CMS
         </h1>
         <Link to="/">Books</Link>
-        <Link to="/categories">categories</Link>
+        <Link to="/categories">Categories</Link>
       </div>
 
       <ImUser />
