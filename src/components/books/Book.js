@@ -20,7 +20,10 @@ const Book = ({
     </div>
     <div className="progress">
       <div>
-        <h3>{completed}</h3>
+        progress circle:
+        <h3>
+          {completed}
+        </h3>
         <p>completed</p>
       </div>
     </div>

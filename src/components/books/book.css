@@ -1,8 +1,8 @@
-.bookCard{
-    display: flex;
-    justify-content: space-between;
+.bookCard {
+  display: flex;
+  justify-content: space-between;
 }
 
 li.bookInfo {
-    list-style-type: none;
+  list-style-type: none;
 }
