@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/books/books';
-import store from '../../redux/configureStore';
-import Button from '../button/Button';
+import { addBook } from '../redux/books/books';
+import store from '../redux/configureStore';
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -48,10 +47,11 @@ const Form = () => {
 
     dispatch(addBook(newBook));
   };
-
-    <section className="form-section">
-      <h4>ADD NEW BOOK</h4>
-      <form className="book-form" onSubmit={(e) => submitBookToStore(e)}>
+  return (
+    <form onSubmit={(e) => submitBookToStore(e)} className="book-form" required>
+      <label htmlFor="book">
+        ADD NEW BOOK
+        <br />
         <input
           type="text"
           id="book"
@@ -60,34 +60,34 @@ const Form = () => {
           onChange={handleTitleChange}
           required
         />
-
-        <input
-          type="text"
-          id="author"
-          placeholder="Book author"
-          value={form.inputAuthor}
-          onChange={handleAuthorChange}
-          required
-        />
-
-        <select
-          value={form.selectedValue}
-          onChange={handleSelectChange}
-          name="categories"
-          id="categories"
-          required
-        >
-          <option value="none" disabled>
-            Category
-          </option>
-          <option value="action">Action</option>
-          <option value="sport">Sport</option>
-          <option value="Fantasy">Fantasy</option>
-          <option value="anime">Anime</option>
-        </select>
-        <Button text="ADD BOOK" buttonType="submit" id="submit" />
-      </form>
-    </section>;
+      </label>
+      <input
+        type="text"
+        id="author"
+        placeholder="Book author"
+        value={form.inputAuthor}
+        onChange={handleAuthorChange}
+        required
+      />
+      <select
+        value={form.selectedValue}
+        onChange={handleSelectChange}
+        name="categories"
+        id="categories"
+        required
+      >
+        <option value="none" disabled>
+          Category
+        </option>
+        <option value="action">Action</option>
+        <option value="sport">Sport</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="anime">Anime</option>
+      </select>
+      <button className="btn" type="submit">
+        ADD BOOK
+      </button>
+    </form>
+  );
 };
-
 export default Form;
