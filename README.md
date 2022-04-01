@@ -5,6 +5,8 @@
 - React.js
 - CSS
 
+# Live Demo
+https://polite-manatee-2320a7.netlify.app/ 
 ## installation
 
 To get a local copy up and running follow these simple example steps.
