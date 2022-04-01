@@ -1,33 +1,69 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Book-store
 
-# Built with
-- React.js
+# Book-Store
+
+> "Book-Store" is a website you can add and remove books.
+
+With "Book-Store" and it's API, the books are stored for everybody and ready for later use.
+
+## Live Server
+
+In the following link, you can view the [Bookstore website](https://polite-manatee-2320a7.netlify.app/)
+
+## Built With
+
+- HTML
 - CSS
+- JAVASCRIPT
+- REACT
+- REDUX
 
-# Live Demo
-https://polite-manatee-2320a7.netlify.app/ 
-## installation
+## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+Start by cloning the repository.
 
-- clone the repository by running
-``` https://github.com/thermiee/Book-Store.git ```
-- navigate to the folder
-``` cd <DIRECTORY> ```
-- Install packages
-``` npm i ```
-- Run the app
-``` npm start ```
+`git clone https://github.com/thermiee/Book-Store.git`
 
-# Author
-**Thermiee**
-- GitHub: [@thermiee](https://github.com/thermiee)
+Navigate to the created folder.
 
-## :handshake: Contributing
+`cd Book-Store`
+
+Install all the dependencies.
+
+`npm install`
+
+Run the live server
+
+`npm run start`
+
+Go to [http://localhost:3000](http://localhost:3000)
+
+Build the distribution folder before hosting the app
+
+`npm run build`
+
+After the build you can host the `build` folder.
+
+## Authors
+
+👤 **Emmanuel Jolugbo**
+
+- GitHub: [Thermiee](https://github.com/thermiee)
+- LinkedIn: [Emmanuel Jolugbo](https://www.linkedin.com/in/emmanuel-jolugbo/)
+## 🤝 Contributing
+
 Contributions, issues, and feature requests are welcome!
-## Show your support
-Give a :star:️ if you like this project!
+
+Feel free to check the [issues page](../../issues/).
+
 ## Acknowledgments
 
--Microverse
+Thank you Microverse for the opportunity!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
