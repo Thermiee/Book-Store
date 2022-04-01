@@ -36,6 +36,7 @@ nav.navigation-bar {
   margin: 1%;
   justify-content: space-between;
 }
+
 .nav-item {
   display: flex;
   align-items: center;
@@ -53,7 +54,7 @@ ul.navigation-links a {
 }
 
 .title {
-  color: #0290ff
+  color: #0290ff;
 }
 
 .book-card {
