@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
-import store from '../redux/configureStore';
+import { v4 as uuidv4 } from 'uuid';
+import { postBook } from '../redux/books/books';
 
 const Form = () => {
+  const dispatch = useDispatch();
+
   const [form, setForm] = useState({
     inputTitle: '',
     inputAuthor: '',
@@ -18,13 +20,6 @@ const Form = () => {
     });
   };
 
-  const handleAuthorChange = (e) => {
-    setForm({
-      ...form,
-      inputAuthor: e.target.value,
-    });
-  };
-
   const handleSelectChange = (e) => {
     const index = e.target.selectedIndex;
     setForm({
@@ -34,18 +29,15 @@ const Form = () => {
     });
   };
 
-  const dispatch = useDispatch();
-
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: store.getState().bookReducer.length,
+      item_id: uuidv4(),
       title: form.inputTitle,
-      author: form.inputAuthor,
       category: form.selectedText,
     };
 
-    dispatch(addBook(newBook));
+    dispatch(postBook(newBook));
   };
   return (
     <form onSubmit={(e) => submitBookToStore(e)} className="book-form" required>
@@ -61,14 +53,6 @@ const Form = () => {
           required
         />
       </label>
-      <input
-        type="text"
-        id="author"
-        placeholder="Book author"
-        value={form.inputAuthor}
-        onChange={handleAuthorChange}
-        required
-      />
       <select
         value={form.selectedValue}
         onChange={handleSelectChange}
