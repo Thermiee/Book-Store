@@ -8,7 +8,6 @@ const Form = () => {
 
   const [form, setForm] = useState({
     inputTitle: '',
-    inputAuthor: '',
     selectedValue: 'none',
     selectedText: '',
   });
@@ -35,6 +34,7 @@ const Form = () => {
       item_id: uuidv4(),
       title: form.inputTitle,
       category: form.selectedText,
+      author: 'Thermiee',
     };
 
     dispatch(postBook(newBook));

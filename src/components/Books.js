@@ -20,7 +20,11 @@ const Books = () => {
             <h4 className="book-author">Thermiee</h4>
             <ul className="book-events">
               <button type="button" disabled>Comments</button>
-              <button type="button" onClick={(e) => remove(e.target.id)} id={Object.keys(booksState)[index]}>
+              <button
+                type="button"
+                onClick={(e) => remove(e.target.id)}
+                id={Object.keys(booksState)[index]}
+              >
                 Remove
               </button>
               <button type="button" disabled>Edit</button>
