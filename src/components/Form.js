@@ -40,10 +40,11 @@ const Form = () => {
     dispatch(postBook(newBook));
   };
   return (
-    <form onSubmit={(e) => submitBookToStore(e)} className="book-form" required>
-      <label htmlFor="book">
-        ADD NEW BOOK
-        <br />
+    <>
+      <hr />
+      <h1 className="form-title"> ADD NEW BOOK</h1>
+      <form onSubmit={(e) => submitBookToStore(e)} className="book-form" required>
+
         <input
           type="text"
           id="book"
@@ -52,26 +53,26 @@ const Form = () => {
           onChange={handleTitleChange}
           required
         />
-      </label>
-      <select
-        value={form.selectedValue}
-        onChange={handleSelectChange}
-        name="categories"
-        id="categories"
-        required
-      >
-        <option value="none" disabled>
-          Category
-        </option>
-        <option value="action">Action</option>
-        <option value="sport">Sport</option>
-        <option value="Fantasy">Fantasy</option>
-        <option value="anime">Anime</option>
-      </select>
-      <button className="btn" type="submit">
-        ADD BOOK
-      </button>
-    </form>
+        <select
+          value={form.selectedValue}
+          onChange={handleSelectChange}
+          name="categories"
+          id="categories"
+          required
+        >
+          <option value="none" disabled>
+            Category
+          </option>
+          <option value="action">Action</option>
+          <option value="sport">Sport</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="anime">Anime</option>
+        </select>
+        <button className="btn" type="submit">
+          ADD BOOK
+        </button>
+      </form>
+    </>
   );
 };
 export default Form;

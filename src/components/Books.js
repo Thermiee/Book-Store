@@ -33,9 +33,7 @@ const Books = () => {
             </ul>
           </div>
           <div className="book-completion">
-            <div style={{ width: 200, height: 200 }}>
-              <CircularProgressbar value={66} />
-            </div>
+            <CircularProgressbar value={66} />
             <h2>
               64%
               <br />
