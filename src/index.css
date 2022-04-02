@@ -53,7 +53,6 @@ ul.navigation-links a {
   background-color: #fff;
 }
 
-
 .book-completion {
   display: flex;
   align-items: center;
@@ -122,7 +121,6 @@ span {
   letter-spacing: normal;
   color: var(--black-two);
 }
-
 
 svg.CircularProgressbar {
   width: 25%;
