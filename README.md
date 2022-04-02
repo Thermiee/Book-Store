@@ -6,6 +6,8 @@
 
 With "Book-Store" and it's API, the books are stored for everybody and ready for later use.
 
+![screenshot](./app_screenshot.png)
+
 ## Live Server
 
 In the following link, you can view the [Bookstore website](https://polite-manatee-2320a7.netlify.app/)
