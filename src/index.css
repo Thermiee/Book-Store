@@ -59,11 +59,33 @@ ul.navigation-links a {
 
 .book-card {
   display: flex;
-  padding: 30px;
   align-items: center;
+  margin: 2.3rem;
+  padding: 2rem;
+  border: solid 1px lightgrey;
   justify-content: space-between;
 }
 
 form.book-form {
   padding: 30px;
+}
+
+.book-completion {
+  display: flex;
+  align-items: center;
+}
+
+.book-events button {
+  background-color: white;
+  border: none;
+  margin: 10px;
+  margin-left: 0;
+}
+
+button.btn {
+  height: 2rem;
+  width: 10.3rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border-color: #0290ff;
 }
