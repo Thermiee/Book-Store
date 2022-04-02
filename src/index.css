@@ -141,3 +141,8 @@ svg.CircularProgressbar {
   padding: 0.5%;
   color: #0290ff;
 }
+
+h1.categories-title {
+  text-align: center;
+  color: #0290ff;
+}
