@@ -2,9 +2,8 @@
 
 # Book-Store
 
-> "Book-Store" is a website you can add and remove books.
+> "Book-Store" is a website you can add and remove books. With "Book-Store" and it's API, the books are stored for everybody and ready for later use.
 
-With "Book-Store" and it's API, the books are stored for everybody and ready for later use.
 
 ![screenshot](./app_screenshot.png)
 
@@ -38,7 +37,7 @@ Run the live server
 
 `npm run start`
 
-Go to [http://localhost:3000](http://localhost:3000)
+Go to [Localhost](http://localhost:3000)
 
 Build the distribution folder before hosting the app
 
@@ -68,4 +67,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [GNU](./LICENSE) licensed.
