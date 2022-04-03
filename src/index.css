@@ -107,6 +107,7 @@ hr {
 
 h4.book-author {
   color: #0290ff;
+  font-weight: lighter;
 }
 
 span {
@@ -128,6 +129,7 @@ svg.CircularProgressbar {
   align-items: center;
   margin: 2%;
   opacity: 0.5;
+  font-size: large;
 }
 
 .navigation-bar svg {
@@ -143,9 +145,19 @@ h1.categories-title {
 }
 
 .book-update h4 {
-  font-weight: normal;
+  font-weight: lighter;
+  opacity: 0.5;
 }
 
 h2.book-title {
   font-family: 'RobotoSlab', sans-serif;
+}
+
+h3.book-category {
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #0290ff !important;
 }
